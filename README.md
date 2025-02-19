@@ -1,6 +1,6 @@
-# FaiRefacFront
+# FAIREFAC web
 
-Welcome to the **FaiRefacFront** repository, the frontend application for the FaiRefac system. This project is designed to provide a seamless and user-friendly interface for managing car repair quotes and processes efficiently. Built using modern web technologies, it ensures a responsive and intuitive user experience.
+Welcome to the **FAIREFAC web** repository, the frontend application for the FAIREFAC system. This project is designed to provide a seamless and user-friendly interface for managing car repair quotes and processes efficiently. Built using modern web technologies, it ensures a responsive and intuitive user experience.
 
 ---
 
@@ -17,12 +17,10 @@ Welcome to the **FaiRefacFront** repository, the frontend application for the Fa
 
 ## Tech Stack
 
-- **Frontend Framework**: [React.js](https://reactjs.org/) with [Next.js](https://nextjs.org/)
-- **State Management**: Context API / Custom Hooks
-- **Styling**: CSS Modules / Styled Components
-- **HTTP Client**: [Axios](https://axios-http.com/)
+- **Frontend Framework**: [React.js](https://reactjs.org) with [Next.js](https://nextjs.org)
+- **State Management**: Context API 
+- **Styling**: [Tailwind-CSS](https://tailwindcss.com)
 - **Utilities**:
-  - JWT for secure token handling
   - Dynamic routing with Next.js
   - Responsive design principles
 
@@ -42,8 +40,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/aleTorres05/FaiRefacFront.git
-   cd FaiRefacFront
+   git clone https://github.com/Yairgg95/FAIREFAC-web.git
+   cd FAIREFAC-web
    ```
 
 2. **Install Dependencies**  
@@ -59,15 +57,7 @@ Before you begin, ensure you have the following installed:
    yarn install
    ```
 
-3. **Set Up Environment Variables**  
-   Create a `.env` file in the root directory and provide the necessary configuration, such as:
-
-   ```env
-   NEXT_PUBLIC_API_URL=<backend_api_url>
-   NEXT_PUBLIC_STRIPE_KEY=<stripe_public_key>
-   ```
-
-4. **Run the Development Server**
+3. **Run the Development Server**
 
    ```bash
    npm run dev
@@ -79,7 +69,7 @@ Before you begin, ensure you have the following installed:
    yarn dev
    ```
 
-5. **Open in Browser**  
+4. **Open in Browser**  
    Navigate to `http://localhost:3000` to access the application.
 
 ---
@@ -87,14 +77,14 @@ Before you begin, ensure you have the following installed:
 ## Folder Structure
 
 ```
-FaiRefacFront/
+FAIREFAC-web/
 ├── components/         # Reusable components
 ├── pages/              # Next.js page routes
 ├── styles/             # Styling files
-├── utils/              # Helper functions
-├── context/            # Context API setup
-├── public/             # Static assets
-├── .env                # Environment variables
+├── next.config.mjs     # Next.js configuration file
+├── package-lock.json   # Dependency lock file
+├── package.json        # Project configuration and dependencies
+├── tailwind.config.js  # Tailwind CSS configuration file
 └── README.md           # Documentation
 ```
 
@@ -128,14 +118,3 @@ We welcome contributions to enhance the project! Follow these steps to contribut
    ```
 5. Create a pull request and describe your changes.
 
----
-
-## Issues
-
-If you encounter any issues or have suggestions, please report them [here](https://github.com/aleTorres05/FaiRefacFront/issues). Ensure to provide a detailed description to help resolve them efficiently.
-
----
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
